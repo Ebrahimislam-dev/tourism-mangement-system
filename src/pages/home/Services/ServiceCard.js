@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Services.css'
 
 const ServiceCard = ({ service }) => {
 
     // destructuring
-    const { key, servicename, aboutservice, img } = service;
+    const { _id, name, price, description, img } = service;
     // const history = useHistory();
     // const handleBooking = () => {
     //     history.push('/booking');
@@ -19,19 +19,22 @@ const ServiceCard = ({ service }) => {
                     <Card className="cardsbody mb-5  h-100 ">
                         <Card.Img variant="top cardsimg" src={img} />
                         <Card.Body className="cardsbody" >
-                            <Card.Title className="text-center fw-bold">{servicename}</Card.Title>
+                            <Card.Title className="text-center fw-bold">{name}</Card.Title>
                             <Card.Text>
+                                <h2>
+                                    Price: $ {price}
+                                </h2>
                                 <h5>
-                                    About Service: <small className="pb-3 fs-6 text-start"> {aboutservice}</small>
+                                    About Service: <small className="pb-3 fs-6 text-start"> {description}</small>
                                 </h5>
 
 
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Link to={`/booking/${key}`}>
+                            {/* <Link to={`/booking/${}`}>
                                 <button className="btn btn-outline-dark px-5 border-2 rounded-4 fw-bold fst-italic">Book {servicename.toLowerCase()}</button>
-                            </Link>
+                            </Link> */}
                         </Card.Footer>
                     </Card>
                 </Col>

@@ -1,3 +1,8 @@
+.header-bg{
+  background-image:linear-gradient(to top, #0f2027ad, #203a43, #2c5364)
+}
+
+
 .header-navbar {
     width: 100%;
     height: 50px;

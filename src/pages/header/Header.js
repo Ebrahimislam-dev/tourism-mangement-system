@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import "./Header.css"
-import useAuth from "./../../../hooks/useAuth";
+// import useAuth from "./../../../hooks/useAuth";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -15,10 +17,14 @@ const Header = () => {
         borderBlockEnd: "2px solid #ff0000"
     };
     return (
-        <Navbar sticky="top" className="p-0 m-0" collapseOnSelect expand="lg" bg="dark" variant="dark">
+
+
+
+        <Navbar sticky="top" className="header-bg p-0 m-0" collapseOnSelect expand="lg" bg="dark">
             <Container className="p-0 m-0">
-                <Navbar.Brand className="d-flex align-items-center"><Link to="/home"><img className="w-50 me-5" src="" alt="" /></Link>
-                  {/* show image & name of login users */}
+                <Navbar.Brand className="d-flex align-items-center">
+                    <Link to="/home"><img className="w-50  me-5" src="https://i.ibb.co/Wf0t24v/logo.png" alt="" /></Link>
+                    {/* show image & name of login users */}
                     {
                         user.email && <div className="d-flex align-items-center">
                             <img className=" w-25 rounded-circle" src={user.photoURL} alt="" />
@@ -34,12 +40,12 @@ const Header = () => {
                         <NavLink to='/home' activeStyle={active} className='nav-item text-white text-decoration-none'>
                             Home
                         </NavLink>
-                        <NavLink to='/services' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Services
+                        <NavLink to='/manageservice' activeStyle={active} className='nav-item text-white text-decoration-none'>
+                            Manage Services
                         </NavLink>
 
-                        <NavLink to='/doctors' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Doctors
+                        <NavLink to='/addservice' activeStyle={active} className='nav-item text-white text-decoration-none'>
+                            Add A Service
                         </NavLink>
                         <NavLink to='/appointments' activeStyle={active} className='nav-item text-white text-decoration-none'>
                             Appointments
@@ -71,6 +77,13 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar >
+
+
+
+
+
+
+
 
 
 

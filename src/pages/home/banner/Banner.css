@@ -3,10 +3,14 @@
 background: linear-gradient(to bottom, #000000, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.banner{
+    background-image:linear-gradient(to top, #0f202762, #203a43bd, #2c5364b2);
+    color: antiquewhite;
+}
 .headingBanner{
  
     font-family: Georgia, sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     letter-spacing: -2px;
     
        

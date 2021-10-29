@@ -1,15 +1,18 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Header from "./pages/home/header/Header";
+import Header from "./pages/header/Header";
 import Home from "./pages/home/home/Home";
 // import Services from "./pages/home/Services/Services";
-import Faqs from "./pages/home/FAQS/Faqs";
-import About from "./pages/home/About/About";
-import Contactus from "./pages/home/contact/Contactus";
+import Faqs from "./pages/FAQS/Faqs";
+import About from "./pages/About/About";
+import Contactus from "./pages/contact/Contactus";
 import Login from "./pages/login/login/Login";
 import NotFound from "./pages/notfound/NotFound";
-import Footer from "./pages/home/footer/Footer";
+import Footer from "./pages/footer/Footer";
 import AuthProvider from './context/AuthProvider';
+import AddService from "./pages/home/addservice/AddService";
+import ManageServices from "./pages/home/manageServices/ManageServices";
+
 
 
 
@@ -32,6 +35,12 @@ function App() {
             </Route> */}
             <Route path="/faqs">
               <Faqs></Faqs>
+            </Route>
+            <Route path="/addservice">
+              <AddService></AddService>
+            </Route>
+            <Route path="/manageservice">
+              <ManageServices></ManageServices>
             </Route>
 
 

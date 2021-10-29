@@ -1,0 +1,25 @@
+
+  .footer-bg{
+    background-image:linear-gradient(to top, #0f2027ad, #203a43, #2c5364),url("https://i.ibb.co/zJg7nSd/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:100
+  }
+  .footer-menu {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(250, 241, 231);
+  }
+  .footer-menu:hover {
+    color: red;
+  }
+  .heading-footer{
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 2.5em;
+    letter-spacing: -1px;
+       
+}
+ 

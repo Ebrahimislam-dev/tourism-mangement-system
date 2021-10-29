@@ -7,7 +7,7 @@ import {
     faInstagramSquare,
     faTwitterSquare,
     faYoutube,
-   
+
 } from "@fortawesome/free-brands-svg-icons";
 import {
 
@@ -21,56 +21,59 @@ const Footer = () => {
     return (
         <div>
 
-            <div className="container-fluid bg-dark text-white-50">
-
-                <div className="container">
+            <div className="container-fluid footer-bg text-white-50">
+                <p className="heading-footer footer-menu  fst-italic">
+                    " The world is a book and those who do not travel get to read only one page! "
+                </p>
+                <div className="container-fluid">
                     <div className=" row">
                         {/* About colum */}
                         <div className="col-md-3">
                             <div className="mt-5 text-start">
-                                <h3>Islami Health Care</h3>
+                                <h3 className="fst-italic fs-1">Travel MaMa</h3>
+                                <p>Our company provides goods of premium quality and at
+
+                                    fair prices. We are sure that these options are the secret
+
+                                    of success.</p>
                                 <div className="d-flex  text-center ">
-                                    <div className=" me-3 fs-3 text-danger">
-                                        <Link to="/contact" className="text-danger">
+                                    <div className=" me-3">
+                                        <Link to="/contact" className="footer-menu fs-3">
                                             <FontAwesomeIcon icon={faGoogle} />
                                         </Link>
 
                                     </div>
                                     <div className="me-3 fs-3">
-                                        <Link to="/contact" className="text-danger">
+                                        <Link to="/contact" className="footer-menu fs-3">
                                             <FontAwesomeIcon icon={faFacebookSquare} />
                                         </Link>
 
                                     </div>
                                     <div className=" me-3 fs-3">
-                                        <Link to="/contact" className="text-danger">
+                                        <Link to="/contact" className="footer-menu fs-3">
                                             <FontAwesomeIcon icon={faInstagramSquare} />
                                         </Link>
 
                                     </div>
 
                                     <div className=" me-3 fs-3">
-                                        <Link to="/about" className="text-danger">
+                                        <Link to="/about" className="footer-menu fs-3">
                                             <FontAwesomeIcon icon={faTwitterSquare} />
                                         </Link>
 
                                     </div>
                                     <div className=" me-3 fs-3">
-                                        <Link to="/about" className="text-danger">
+                                        <Link to="/about" className="footer-menu fs-3">
                                             <FontAwesomeIcon icon={faYoutube} />
                                         </Link>
 
                                     </div>
 
                                 </div>
-                                <p className="mt-4 ">
-                                    <small>
-                                        Islami health care is one of the leading private healthcare providers in Bangladesh having an impressive 'Reach', providing superior quality diagnostics services to its patients through a very efficient network of outreach centers and collection points located strategically across the greater Chittagong division.
-                                    </small>
-                                </p>
+
 
                                 <p className="mt-5">
-                                    <small>IHCC © . All rights reserved.</small>
+                                    <small>TravelMama © All rights reserved.</small>
                                     <br />
                                     <small>Developed by Ebrahim Islam.</small>
                                 </p>
@@ -79,26 +82,34 @@ const Footer = () => {
                         <div className="col-md-2 mt-5">
                             <div className="footer-menu-container">
                                 <ul>
-                                    <h3 className="d-flex justify-content-around">
-                                        <i class="fas fa-ambulance"></i>
-                                        <p>EMERGENCY</p>
+                                    <h3 className="">
+                                        Working_Hours
                                     </h3>
                                     <li className="footer-menu d-flex justify-content-between">
                                         <div>
-                                            <i class="fas fa-phone-volume"></i>
+                                           <i class="fas fa-calendar-day"></i>
                                         </div>
                                         <div>
-                                            Call:  02 – 58311740
+                                            Saturday: 9am - 7pm
                                         </div>
                                     </li>
                                     <li className="footer-menu d-flex justify-content-between">
                                         <div>
-                                            <i class="fas fa-headset"></i>
+                                           <i class="fas fa-calendar-day"></i>
                                         </div>
                                         <div>
-                                            Hotline: +8801938-881110
+                                            Sunday: 9am - 8pm
                                         </div>
                                     </li>
+                                    <li className="footer-menu d-flex justify-content-between">
+                                        <div>
+                                           <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <div>
+                                            Mon - Fri: 8am - 8pm
+                                        </div>
+                                    </li>
+
 
 
 
@@ -194,25 +205,33 @@ const Footer = () => {
                                 />
                                 <br />
                                 <button className="btn btn-danger px-4 fw-bold mt-1">Submit</button>
-                                <div className="mt-3">
-                                    <h5>
-                                        <Link to="/about" className="text-danger">
-                                            <FontAwesomeIcon icon={faPhoneVolume} />
-                                        </Link>
-                                        Phone: +8801727-264178, +8801819-941450</h5>
-                                </div>
-                                <div className="mt-3">
+                                <div className="footer-menu mt-3">
                                     <p>
-                                        <Link className="text-danger">
-                                            <i class="fas fa-info-circle"></i>
-                                        </Link>
-                                        Support: support@patientcarehomeservicebd.com</p>
+                                        <FontAwesomeIcon icon={faPhoneVolume} />
+
+                                        Phone: +8801727-264178, +8801819-941450
+                                    </p>
                                 </div>
-                                <div className="mt-3">
+                                <div className="footer-menu mt-3 d-flex justify-content-center align-items-center ">
+                                    <div>
+                                        <i className="fas fa-headset"></i>
+                                    </div>
+                                    <div>
+                                        Hotline: +8801938-881110
+                                    </div>
+                                </div>
+
+
+
+                                <div className="mt-3 footer-menu">
+                                    <i className="fas fa-info-circle me-1"></i>
+                                    Support: support@travelmamaservicebd.com
+                                </div>
+                                <div className="mt-3 footer-menu">
                                     <p>
-                                        <Link to="/about" className="text-danger">
-                                            <FontAwesomeIcon icon={faMapMarkedAlt} />
-                                        </Link>
+
+                                        <FontAwesomeIcon icon={faMapMarkedAlt} />
+
                                         119, K.B. Fazlul Kader Road, Chittagong
                                     </p>
                                 </div>

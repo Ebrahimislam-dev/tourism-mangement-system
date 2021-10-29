@@ -9,62 +9,67 @@ const Banner = () => {
         <>
             <Carousel fade className="slide-item">
                 <Carousel.Item interval={1000} >
-                    <Carousel.Caption >
-                        <div className="  pe-5 pb-5 mb-5 text-center">
-                            <h1 className=" text-black-50 headingBanner">WELCOME TO ISLAMI HEALTH CARE</h1>
-                            <p className="fs-4 px-3 text-danger fw-bold fst-italic">We are team of talented doctors making your life happiness</p>
+
+                    <img
+                        className="d-block w-100 slide-item"
+                        src="https://i.ibb.co/LYpxfg0/banner1.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption className="row" >
+                        <div className="banner col-md-4 w-50">
+                            <div className="text-center">
+                                <h1 className=" headingBanner">WELCOME TO TRAVEL MAMA</h1>
+                                <p className="fs-5 px-3 fst-italic">We have the team of talented Tourist Guide's making your life happiness</p>
+                            </div>
+                            <div className="text-center mb-2">
+                                <Button className="btn btn-danger px-3 py-2 fw-bold">GET STARTED</Button>
+                            </div>
                         </div>
-                        <div className="  pb-5 mb-5 me-5 text-center">
-                            <Button className="btn btn-danger px-3 py-2 fw-bold">GET STARTED</Button>
+
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={1000} >
+                    <Carousel.Caption className="row" >
+                        <div className="banner col-md-4 w-50 mt-5">
+                            <div className="text-center mx-5 my-5">
+                                <h1 className=" headingBanner">Best Decision Ever</h1>
+                                <h2 className="fs-5 px-3 fw-bold fst-italic"> No Risk , No Worries</h2>
+                            </div>
+                            <div className="text-center ">
+                                <Button className="btn btn-info fs-5 mt-2 mb-3 px-3 py-2 fw-bold">GET STARTED</Button>
+                            </div>
                         </div>
 
                     </Carousel.Caption>
                     <img
                         className="d-block w-100 slide-item"
-                        src=""
+                        src="https://i.ibb.co/zJg7nSd/banner2.jpg"
                         alt="First slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item interval={500} >
-                    <Carousel.Caption >
-                        <div className="pb-md-5 mb-md-5 text-center">
-                            <h1 className="fs-md-1 text-success">LET US PROTECT YOUR HEALTH</h1>
-                            <Button className="btn btn-success">Read More</Button>
-
-                        </div>
-
-
-                    </Carousel.Caption>
-                    <img
-                        className="d-block w-100 slide-item"
-                        src=""
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={500}>
+                <Carousel.Item interval={500000}>
                     <img
                         className="d-block w-100"
-                        src=""
+                        src="https://i.ibb.co/jrzYX2V/banner3.jpg"
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <h2 className="text-success fs-md-1">BEST DOCTOR'S SUPPORT</h2>
+                    <Carousel.Caption className="row" >
+                        <div className=" col-md-4">
 
-                        <Button className="btn btn-success">Read More</Button>
+                        </div>
+                        <div className="banner col-md-4 w-50 mt-5">
+                            <div className="text-center">
+                                <h1 className=" headingBanner">Explore Your Destination</h1>
+                                <h2 className="fs-4 px-3 fw-bold fst-italic"> Experience It Live</h2>
+                            </div>
+                            <div className="text-center ">
+                                <Button className="btn btn-warning mt-2 mb-3 px-3 py-2 fs-5 fw-bold">Explore It</Button>
+                            </div>
+                        </div>
+
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={500}>
-                    <img
-                        className="d-block w-100"
-                        src=""
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h3 className="text-success">SUPPORT BETTER PATIENT SERVICES</h3>
 
-                        <Button className="btn btn-success">Read More</Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
             </Carousel>
         </>
     );

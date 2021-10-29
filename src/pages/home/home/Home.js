@@ -1,19 +1,37 @@
 import React from 'react';
-// import Doctors from '../doctors/Doctors';
-// import QuickLinks from '../QuickLinks/QuickLinks';
-// import Services from '../Services/Services';
-// import Banner from "./../banner/Banner";
+import Banner from "./../banner/Banner";
+
+import "./Home.css"
+import Services from "./../Services/Services";
+
 
 
 const Home = () => {
     return (
         <div>
-           {/* <Banner></Banner> */}
-            {/* <Services></Services> */}
+              <Banner></Banner> 
+            <div className="topbanner container-fluid ">
+                <div className="container row  ">
+                    <div className=" topheader col-12 col-md-8">
+                        <h3 className=" fw-bold text-center  heading-top mt-5">Exploring the <br /> World. A great <br /> choice of tours.</h3>
 
-          
+                    </div>
+                    <div className=" mt-5 col-12 col-md-4">
+                        <img className="topheader w-100" src="https://i.ibb.co/Wf0t24v/logo.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div>
+             
+            </div>
+
+            
+             <Services></Services> 
+
+
             {/* <QuickLinks></QuickLinks> */}
-           
+
         </div>
     );
 };
