@@ -1,0 +1,14 @@
+.covid-banner{
+    background-image:url("https://i.ibb.co/dp5q2NK/bg-covid.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.items-bg{
+    background-image: url("https://i.ibb.co/5sJvgrc/img-11-small-crop-center.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 285px;
+}

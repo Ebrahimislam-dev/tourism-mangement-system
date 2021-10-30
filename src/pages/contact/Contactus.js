@@ -1,18 +1,18 @@
 import React from 'react';
-
+import "./Contact.css"
 const Contactus = () => {
     return (
         <div className="container-fluid">
             {/* Contact use 1st Section */}
-            <div>
-                <div className="row">
+            <div className="container">
+                <div className="row container">
                     <h1 className="heading mb-5 mt-2">
-                        CONTACT US
+                        CONTACT  <span className="text-danger ms-3">US</span> 
                     </h1>
 
                     <div className="col-md-5 text-start ms-3">
                         <h5>
-                            Islamic Health Care
+                            Travel Mama
                         </h5>
                         <p>
                             Jubli Road, Chittagong-4318, Bangladesh <br />
@@ -20,19 +20,19 @@ const Contactus = () => {
 
                             Tel.: +88-03042-51153,+88-03042-51155,+88-03042-51156<br />
                             Fax.: 03042 51160 <br />
-                            Email: info@ihc.com
+                            Email: info@travelmama.com
                         </p>
                     </div>
                     <div className="col-md-5 text-start ms-3">
                         <h5>
-                            For Appointment Related Query
+                            For Tour Related Query
                         </h5>
                         <p>
                             Tel.: +88-03042-51154-61, Ext. 317, 390 <br />
                             Mobile No.: 01720478621, 01844072000 <br />
                             Mobile Numbers remain open during office hour (08.30 AM to 04.00 PM) <br />
 
-                            Email Address: info@ihc.com <br />
+                            Email Address: info@travelmama.com <br />
                         </p>
                     </div>
                     <div className="col-md-5 text-start ms-3">
@@ -42,17 +42,17 @@ const Contactus = () => {
                         <p>
                             Tel.: +88-03042-51154-61, Ext. 385 <br />
                             Mobile : +8809613230513 <br />
-                            Email Address: info@ihc.com
+                            Email Address: info@travelmama.com
                         </p>
                     </div>
                     <div className="col-md-5 text-start ms-3">
                         <h5>
-                            For Test Report Query
+                            For Guide Related Query
                         </h5>
                         <p>
                             Tel.: +88-03042-51154-61, Ext. 384, 3060 <br />
                             Mobile: 01832223310 <br />
-                            Email Address: info@ihc.com
+                            Email Address: info@travelmama.com
                         </p>
                     </div>
 
@@ -62,7 +62,7 @@ const Contactus = () => {
             </div>
             {/* Contactus 2nd section */}
             <div>
-                <div className="bg-dark opacity-75 text-white p-5 mb-1 rounded">
+                <div className="contact-bg text-black-50 fw-bold p-5 mb-1 rounded">
                     <h1 className="text-center m-3 fs-1 fst-italic">Conatct Us Via Mail</h1>
                     <form>
                         <div className="row mb-3">

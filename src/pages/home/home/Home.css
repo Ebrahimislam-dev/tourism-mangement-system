@@ -2,16 +2,15 @@
     background-image:url("https://i.ibb.co/zHZJTrh/home-banner.jpg");
     width: 100%;
     height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
    
 }
+
 .heading-top{
-    
- 
-        font-family: Georgia, sans-serif;
-        font-size: 4em;
-        letter-spacing: 2px;
-        
-    
+    font-family: Georgia, sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;  
 }
 .topheader{
     margin-top:120px;

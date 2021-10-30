@@ -55,7 +55,7 @@ function App() {
               <Login></Login>
             </Route>
 
-            {/* <PrivateRoute path="/appointments">
+            {/* <PrivateRoute path="/myorders">
                <Appointments></Appointments> 
             </PrivateRoute> */}
             {/* <PrivateRoute path="/booking/:servicesId">

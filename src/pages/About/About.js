@@ -7,8 +7,8 @@ const About = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className=" page-title bg-success bg-opacity-25 py-3 ">
-                            <h5  className="heading fs-1">MISSION & VISSION</h5>
+                        <div className=" page-title py-3 ">
+                            <h5 className="heading fs-1">About Our Company <span className="text-danger"> & </span>Our Guids</h5>
                         </div>
                     </div>
                 </div>
@@ -24,39 +24,72 @@ const About = () => {
 
                             </div>
                             <div className="col-md-7 text-start">
-                                <h4 className="text-success">BACKGROUND</h4>
-                                <p>To make an effective management plan for treating the patient, an authentic diagnostic report is an inevitable part. Consultants face a great deal in getting authentic medical diagnostic report as well as having lack of well decorated professionally managed consultant chambers at a suitable location in the commercial capital of Bangladesh,&nbsp; Chittagong. Sometimes a patient has to go to Dhaka or abroad to do the test due to unavailability which is time-consuming and causes the financial burden for the patient &amp; delay in getting the report, also delay in patient's treatment. Besides, &nbsp;a patient has to move from one diagnostic facility to another, as all facilities are not available under one roof. An emergency report is required mainly for the hospital admitted patient where prompt service is most desired but there is lack of these services in the city.</p>
-                                <p>Realizing these needs of consultant doctors, patient and the community with great care and anticipation to fulfill its social responsibility, Epic Properties Limited has devoted itself to establish a `One Stop Medical Diagnostic institute’ with a specialized Consultant chamber facility – “Islamic Health Care Ltd”</p>
+                                <h4 className="text-success">Travel Mama Accredited since 1999</h4>
+                                <p>After guiding and working in Colorado for 10 years, Jim Ablao moved to Oregon in 1999 and immediately began guiding for First Ascent at Smith Rock State Park.  With his strong guide and climbing resume he quickly became the lead guide and manager. After a few years, along with his wife Anne and a handful of committed climbing guides, they formed Chockstone Climbing Guides, committed to a high standard of quality and professionalism. First Ascent and Chockstone Climbing Guides officially merged together in 2005, when Jim purchased First Ascent Climbing Services.  Carol Simpson, First Ascent’s founder and the first woman owned and operated guide service in the Pacific Northwest, was happy to pass on her company to someone she knew would carry on the quality programs that had been in place. Chockstone Climbing Guides has continued to offer the women’s climbing clinics offered by female guides that Simpson pioneered. Jim also began offering professional development AMGA SPI courses and exams that train and certify Single Pitch Instructors for many climbing programs throughout the Northwest US. As a person of color, Jim is involved in the BIPOC American Mountain Guide Association courses. Our Smith Rock Climbing Camps have been running for over 20 years; bringing talented committed young climbers from all over the country, these advanced level camps focus on bridging strong indoor skills to developing experience and skills for independent climbing at the crag. We expanded our camp offerings to adults in 2013.  The Smith Rock Climbing Camps are one of the only overnight camps of its kind in the US.</p>
                             </div>
                         </div>
-                        <div className="row mt-5">
-                            <div className="col-md-12">
-                                <h4 className="text-success text-start">OUR MISSION</h4>
-                                <p className="text-start">The Epic Health Care will contribute to excellent patient care by providing comprehensive, high quality laboratory testing and patient-focused expert consultation doctors’ service. This mission is supported by innovative research and new test development, exceptional customer service, continuous quality improvement in Health Care</p>
+
+                        <div className="row">
+                            <div className="col-md-6">
+                                <img className="card-body h-100 w-100 border-0 rounded-4 rounded-circle" src="https://i.ibb.co/qBmz5g7/bg2.png" alt="" />
+
+                            </div>
+                            <div className="col-md-6 text-start mt-5">
+                                <h1 className="heading mt-5">Our customers are very
+                                    <br />
+                                    important to us.
+                                </h1>
+                                <h4>
+                                    Our company provides goods of premium quality and at fair prices. We are sure that these options are the secret of success.
+                                </h4>
+                                <p>
+                                    That is why we have so many devoted clients all over the country - there is nothing better than thankful customers. Our products are the inspiration to save nature and explore new spaces.
+                                </p>
+                                <div className="d-flex justify-content-around">
+                                    <div>
+                                        <h1 className="heading text-warning fw-bold" >10.250</h1>
+                                        <h5 className="text-center" >Customers</h5>
+
+                                    </div>
+                                    <div className="col-md-6 text-start">
+                                        <p className="mt-3">Satisfied customers
+                                            <br />
+                                            worldwide and growing</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="row">
+
+                            <div className="col-md-6 text-start mt-5">
+                                <h1 className="heading mt-5">Our planet is
+                                    <br />
+                                    something
+                                    <br />
+                                    unbelievable.</h1>
+                                <p className="fs-5">We handpicked hundreds of the most spectacular
+                                    <br /> summer destinations all over the globe. Relax your body
+                                    <br /> and soul in the most remote corners of the world.</p>
+                            </div>
+                            <div className="col-md-6">
+                                <img className="card-body h-100 w-100 rounded-3" src="https://i.ibb.co/HdwDTQx/bg1.png" alt="" />
+
                             </div>
                         </div>
-                        <div className="row mt-5">
-                            <div className="col-md-12">
-                                <h4 className="text-success text-start">OUR VISSION</h4>
-                                <p className="text-start">To provide Authentic &amp; Quality Medical Diagnostic Test Report to patients institutionally, Regionally and nationally. To establish a referral medical institute fulfilling the need of challenges to Quality Health Care” To provide the highest quality laboratory testing and expert pathology diagnosis to patients institutionally, regionally and nationally.&nbsp;</p>
-                            </div>
-                        </div>
-                        <p>&nbsp;</p>
+
+
                         <div className="row">
                             <div className="col-md-12">
-                                <h4 className="text-success text-start">VALUES</h4>
-                                <ul className="text-start text-decoration-none">
-                                    <i class="far fa-hand-point-right"></i>  Patient- Centred Care
+                                <h1 className="heading text-warning text-center">Travel Mama Guides are committed professionals</h1>
+                                <ul className="text-start text-decoration-none fs-5">
+
+                                    <i class="far fa-hand-point-right"></i> We are all local to the region and enjoy sharing our knowledge and our appreciation through many years of climbing together and guiding in Central Oregon.
                                     <br />
-                                    <i class="far fa-hand-point-right"></i>  Continuous Learning
+                                    <i class="far fa-hand-point-right"></i>  Our Smith Rock climbing guide staff and instructors are American Mountain Guide Association certified and trained
                                     <br />
-                                    <i class="far fa-hand-point-right"></i>  Clinical Excellence &amp; Expert Diagnosis
-                                    <br />
-                                    <i class="far fa-hand-point-right"></i>  Dedication towards our Staff
-                                    <br />
-                                    <i class="far fa-hand-point-right"></i>  Research and Development
-                                    <br />
-                                    <i class="far fa-hand-point-right"></i>  Treat everyone in our community, including patients, their families and colleagues, with dignity.
+                                    <i class="far fa-hand-point-right"></i> Each of our climbing guides brings a wealth of diverse climbing, professional and outdoor experience to our team.
                                 </ul>
                             </div>
                         </div>

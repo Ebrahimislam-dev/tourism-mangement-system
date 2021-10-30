@@ -3,13 +3,14 @@ import Banner from "./../banner/Banner";
 
 import "./Home.css"
 import Services from "./../Services/Services";
+import Extrasections from '../ExtraSection/Extrasections';
 
 
 
 const Home = () => {
     return (
-        <div>
-              <Banner></Banner> 
+        <div className="">
+            <Banner></Banner>
             <div className="topbanner container-fluid ">
                 <div className="container row  ">
                     <div className=" topheader col-12 col-md-8">
@@ -23,11 +24,12 @@ const Home = () => {
                 </div>
             </div>
             <div>
-             
+
             </div>
 
-            
-             <Services></Services> 
+
+            <Services></Services>
+           <Extrasections></Extrasections>
 
 
             {/* <QuickLinks></QuickLinks> */}

@@ -13,14 +13,14 @@ const Header = () => {
     const active = {
         fontWeight: "bold",
         color: "red",
-        borderBlockStart: "2px solid #ff0000",
-        borderBlockEnd: "2px solid #ff0000"
+        borderBlockStart: "3px solid #ff0000",
+        borderBlockEnd: "1px solid #ff0000"
     };
     return (
 
 
 
-        <Navbar sticky="top" className="header-bg p-0 m-0" collapseOnSelect expand="lg" bg="dark">
+        <Navbar sticky="top" className="header-bg p-0 m-0 " collapseOnSelect expand="lg">
             <Container className="p-0 m-0">
                 <Navbar.Brand className="d-flex align-items-center">
                     <Link to="/home"><img className="w-50  me-5" src="https://i.ibb.co/Wf0t24v/logo.png" alt="" /></Link>
@@ -28,7 +28,7 @@ const Header = () => {
                     {
                         user.email && <div className="d-flex align-items-center">
                             <img className=" w-25 rounded-circle" src={user.photoURL} alt="" />
-                            <span className='nav-item text-white text-decoration-none fs-6 fst-italic'>{user.displayName}</span>
+                            <span className='nav-item text-black   text-decoration-none fs-6 fst-italic'>{user.displayName}</span>
 
                         </div>
                     }
@@ -37,26 +37,26 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
 
-                        <NavLink to='/home' activeStyle={active} className='nav-item text-white text-decoration-none'>
+                        <NavLink to='/home' activeStyle={active} className='nav-item text-black   text-decoration-none'>
                             Home
                         </NavLink>
-                        <NavLink to='/manageservice' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Manage Services
+                        <NavLink to='/manageservice' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                            Manage_Services
                         </NavLink>
 
-                        <NavLink to='/addservice' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Add A Service
+                        <NavLink to='/addservice' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                            Add_Service
                         </NavLink>
-                        <NavLink to='/appointments' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Appointments
+                        <NavLink to='/myorders' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                            My_Orders
                         </NavLink>
-                        <NavLink to='/about' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            About-Us
+                        <NavLink to='/about' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                            About_Us
                         </NavLink>
-                        <NavLink to='/contact' activeStyle={active} className='nav-item text-white text-decoration-none'>
-                            Contact-Us
+                        <NavLink to='/contact' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                            Contact_Us
                         </NavLink>
-                        <NavLink to='/faqs' activeStyle={active} className='nav-item text-white text-decoration-none'>
+                        <NavLink to='/faqs' activeStyle={active} className='nav-item text-black   text-decoration-none'>
                             FAQ's
                         </NavLink>
 
@@ -68,10 +68,10 @@ const Header = () => {
                         {
                             user.email ?
 
-                                <NavLink activeStyle={active} className='nav-item text-white text-decoration-none' onClick={logOut} to="/login">LogOut <i class="fas fa-sign-out-alt"></i></NavLink>
+                                <NavLink activeStyle={active} className='nav-item text-black   text-decoration-none' onClick={logOut} to="/login">LogOut <i class="fas fa-sign-out-alt"></i></NavLink>
                                 :
 
-                                <NavLink activeStyle={active} className='nav-item text-white text-decoration-none' to="/login">Log in <i class="fas fa-sign-in-alt"></i></NavLink>
+                                <NavLink activeStyle={active} className='nav-item text-black   text-decoration-none' to="/login">LogIn<i class="fas fa-sign-in-alt"></i></NavLink>
                         }
                     </Nav>
                 </Navbar.Collapse>
