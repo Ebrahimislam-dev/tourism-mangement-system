@@ -1,9 +1,12 @@
 
   .footer-bg{
-    background-image:linear-gradient(to top, #0f2027ad, #203a43, #2c5364),url("https://i.ibb.co/zJg7nSd/banner2.jpg");
+    background-image:linear-gradient(to top, #0f2027d8, #203a438c, #2c53648c),url("https://i.ibb.co/zJg7nSd/banner2.jpg");
     background-repeat: no-repeat;
-    background-size:100%;
-    background-position:100
+    
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
   }
   .footer-menu {
     list-style: none;

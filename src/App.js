@@ -10,8 +10,11 @@ import Login from "./pages/login/login/Login";
 import NotFound from "./pages/notfound/NotFound";
 import Footer from "./pages/footer/Footer";
 import AuthProvider from './context/AuthProvider';
-import AddService from "./pages/home/addservice/AddService";
-import ManageServices from "./pages/home/manageServices/ManageServices";
+import Admin from "./pages/Admin/Admin";
+import PrivateRoute from "./pages/privateRoute/PrivateRoute";
+import Myorder from "./pages/home/Myorder/Myorder";
+import Booking from "./pages/home/Booking/Booking";
+
 
 
 
@@ -30,20 +33,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            {/* <Route path="/services">
-              <Services></Services>
-            </Route> */}
-            <Route path="/faqs">
-              <Faqs></Faqs>
-            </Route>
-            <Route path="/addservice">
-              <AddService></AddService>
-            </Route>
-            <Route path="/manageservice">
-              <ManageServices></ManageServices>
-            </Route>
-
-
+            <PrivateRoute path="/admin">
+              <Admin></Admin>
+            </PrivateRoute>
+            <PrivateRoute path="/myorders">
+              <Myorder></Myorder>
+            </PrivateRoute>
             <Route path="/about">
               <About></About>
             </Route>
@@ -51,16 +46,15 @@ function App() {
             <Route path="/contact">
               <Contactus></Contactus>
             </Route>
+            <Route path="/faqs">
+              <Faqs></Faqs>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
-
-            {/* <PrivateRoute path="/myorders">
-               <Appointments></Appointments> 
-            </PrivateRoute> */}
-            {/* <PrivateRoute path="/booking/:servicesId">
+            <PrivateRoute path="/booking/:servicesId">
               <Booking></Booking>
-            </PrivateRoute> */}
+            </PrivateRoute>
 
             <Route path="/*">
               <NotFound></NotFound>

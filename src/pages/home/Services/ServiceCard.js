@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Services.css'
 
 const ServiceCard = ({ service }) => {
@@ -16,9 +16,9 @@ const ServiceCard = ({ service }) => {
             {/* Services card dynamically */}
             <div className="text-start container " >
                 <Col>
-                    <Card className="cardsbody mb-5  h-100 ">
+                    <Card className=" hvr-float-shadow hvr-grow-shadow   mb-5  h-100 ">
                         <Card.Img variant="top cardsimg" src={img} />
-                        <Card.Body className="cardsbody" >
+                        <Card.Body className="" >
                             <Card.Title className="text-center fw-bold">{name}</Card.Title>
                             <Card.Text>
                                 <h2>
@@ -31,10 +31,10 @@ const ServiceCard = ({ service }) => {
 
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            {/* <Link to={`/booking/${}`}>
-                                <button className="btn btn-outline-dark px-5 border-2 rounded-4 fw-bold fst-italic">Book {servicename.toLowerCase()}</button>
-                            </Link> */}
+                        <Card.Footer  className="text-center" >
+                            <Link to={`/booking/${_id}`}>
+                                <button className="btn btn-outline-danger px-5 border-2 rounded-4 fw-bold fst-italic">Book Now</button>
+                            </Link>
                         </Card.Footer>
                     </Card>
                 </Col>

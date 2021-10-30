@@ -4,6 +4,7 @@
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .items-bg{
     background-image: url("https://i.ibb.co/5sJvgrc/img-11-small-crop-center.png");

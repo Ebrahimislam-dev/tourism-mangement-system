@@ -85,11 +85,11 @@ const About = () => {
                                 <h1 className="heading text-warning text-center">Travel Mama Guides are committed professionals</h1>
                                 <ul className="text-start text-decoration-none fs-5">
 
-                                    <i class="far fa-hand-point-right"></i> We are all local to the region and enjoy sharing our knowledge and our appreciation through many years of climbing together and guiding in Central Oregon.
+                                    <i className="far fa-hand-point-right"></i> We are all local to the region and enjoy sharing our knowledge and our appreciation through many years of climbing together and guiding in Central Oregon.
                                     <br />
-                                    <i class="far fa-hand-point-right"></i>  Our Smith Rock climbing guide staff and instructors are American Mountain Guide Association certified and trained
+                                    <i className="far fa-hand-point-right"></i>  Our Smith Rock climbing guide staff and instructors are American Mountain Guide Association certified and trained
                                     <br />
-                                    <i class="far fa-hand-point-right"></i> Each of our climbing guides brings a wealth of diverse climbing, professional and outdoor experience to our team.
+                                    <i className="far fa-hand-point-right"></i> Each of our climbing guides brings a wealth of diverse climbing, professional and outdoor experience to our team.
                                 </ul>
                             </div>
                         </div>

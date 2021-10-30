@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button,  Col, Row } from 'react-bootstrap';
+import { Form, Button, Col, Row } from 'react-bootstrap';
 import { useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 // import useAuth from "./../../../hooks/useAuth";
@@ -18,7 +18,7 @@ const Login = () => {
         handlePasswordChange,
         toggleLogin,
         isLogin,
-        processLogin } = useAuth()
+        processLogin} = useAuth()
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
@@ -36,7 +36,8 @@ const Login = () => {
         processLogin()
             .then(result => {
                 history.push(redirect_uri)
-            })
+            });
+        
     }
 
     return (

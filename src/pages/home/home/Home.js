@@ -9,7 +9,7 @@ import Extrasections from '../ExtraSection/Extrasections';
 
 const Home = () => {
     return (
-        <div className="">
+        <div className=" container-fluid">
             <Banner></Banner>
             <div className="topbanner container-fluid ">
                 <div className="container row  ">

@@ -1,4 +1,5 @@
 .add-services form{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +7,12 @@
     margin-top: 100px;
 }
 .add-services form input,textarea{
+    width: 70%;
+    margin-bottom: 30px;
+    
+}
+.add-services .submit{
     width: 40%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     
 }
