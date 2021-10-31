@@ -14,6 +14,7 @@ import Admin from "./pages/Admin/Admin";
 import PrivateRoute from "./pages/privateRoute/PrivateRoute";
 import Myorder from "./pages/home/Myorder/Myorder";
 import Booking from "./pages/home/Booking/Booking";
+import ManageAllOrder from './pages/home/ManageAllOrder/ManageAllOrder';
 
 
 
@@ -38,6 +39,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/myorders">
               <Myorder></Myorder>
+            </PrivateRoute>
+            <PrivateRoute path="/manageallorders">
+              <ManageAllOrder></ManageAllOrder>
             </PrivateRoute>
             <Route path="/about">
               <About></About>

@@ -18,7 +18,7 @@ const ManageServices = () => {
                 setError(error.message);
 
             })
-    }, [setService, setIsLoading])
+    }, [setService, setIsLoading]);
 
     const handleDelete = id => {
         const url = `https://frozen-refuge-45390.herokuapp.com/services/${id}`;
