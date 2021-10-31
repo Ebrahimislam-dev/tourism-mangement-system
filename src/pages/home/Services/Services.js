@@ -11,6 +11,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('');
+    console.log(error);
     // loading data from database 
     useEffect(() => {
         setIsLoading(true);
@@ -25,21 +26,21 @@ const Services = () => {
 
             })
     }, [setServices, setIsLoading]);
-   
+
     return (
         <div className='services'>
             <h1 className="heading mb-5 mt-1">
                 Our <span className="text-danger"> Service's </span>
             </h1>
 
-            
+
 
             {
                 isLoading ? (
                     <Spinner animation="border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </Spinner>
-                    
+
                 ) : (
                     <div className="container-fluid  mb-1">
 
@@ -48,10 +49,10 @@ const Services = () => {
                                 services?.map(service => <ServiceCard
                                     key={service._id}
                                     service={service}
-                                    
+
                                 >
                                 </ServiceCard>)
-                                
+
                             }
                         </Row>
                     </div>

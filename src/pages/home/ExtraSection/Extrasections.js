@@ -154,6 +154,8 @@ const Extrasections = () => {
 
             </div>
 
+            {/* section 3 */}
+
             <div className=" container-fluid row  py-5 mb-1">
                 <div className=" container  row ms-2 mt-5 mb-2 ms-md-5  rounded">
                     <div className="col-md-6 text-start">

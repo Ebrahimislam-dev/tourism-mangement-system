@@ -10,6 +10,7 @@ const Admin = () => {
     return (
         <div>
             <div className="row admin-bg">
+                {/* Add One service section */}
                 <div className="col-8 col-md-5 mx-5 my-5">
                     <Accordion defaultActiveKey="0" flush>
                         <Accordion.Item eventKey="1">
@@ -23,6 +24,7 @@ const Admin = () => {
 
                     </Accordion>
                 </div>
+                {/* Manage Service */}
                 <div className="col-8 col-md-5 mx-5 my-5">
                     <Accordion defaultActiveKey="0" flush>
                         <Accordion.Item eventKey="1">
@@ -36,6 +38,7 @@ const Admin = () => {
 
                     </Accordion>
                 </div>
+                {/* Manage all Orders */}
                 <div className="col-12 col-md-10 mx-md-5 my-5">
                     <Accordion defaultActiveKey="0" flush>
                         <Accordion.Item eventKey="1">

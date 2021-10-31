@@ -7,10 +7,7 @@ const ServiceCard = ({ service }) => {
 
     // destructuring
     const { _id, name, price, description, img } = service;
-    // const history = useHistory();
-    // const handleBooking = () => {
-    //     history.push('/booking');
-    // }
+
     return (
         <div className="container-fluid">
             {/* Services card dynamically */}
@@ -31,7 +28,7 @@ const ServiceCard = ({ service }) => {
 
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer  className="text-center" >
+                        <Card.Footer className="text-center" >
                             <Link to={`/booking/${_id}`}>
                                 <button className="btn btn-outline-danger px-5 border-2 rounded-4 fw-bold fst-italic">Book Now</button>
                             </Link>

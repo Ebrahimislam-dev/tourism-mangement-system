@@ -17,7 +17,11 @@ const Booking = () => {
     const [error, setError] = useState('');
     console.log(error);
     const [details, setDetails] = useState([]);
+
+
     const { user } = useAuth();
+
+
     const {
         register,
         handleSubmit,
@@ -42,17 +46,12 @@ const Booking = () => {
     //filter 
     const singleService = details.filter(service => service._id === servicesId);
 
-    // console.log(singleService);
-
-
-
-
     const onSubmit = (data) => {
-        data.email=user?.email;
+        data.email = user?.email;
         axios.post('https://frozen-refuge-45390.herokuapp.com/order', data)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('added succesfully');
+                    alert('Ordered succesfully, Go to My Order for Checking Order');
                     reset();
                 }
 
@@ -81,6 +80,7 @@ const Booking = () => {
                 ) : (
                     <div className="container-fluid  mb-1">
                         <div className="row">
+                            {/* singl service details */}
                             <div className="col-md-5">
                                 <Row xs={1} md={1} className="g-3 ">
                                     <div className="container-fluid">
@@ -102,9 +102,7 @@ const Booking = () => {
                                                         <Link to="/home">
                                                             <button className="btn btn-outline-dark px-5 border-2 rounded-4 fw-bold fst-italic">Book Another Service</button>
                                                         </Link>
-                                                        <Link to="/myorders">
-                                                            <button className="btn btn-outline-dark ms-3 px-5 border-2 rounded-4 fw-bold fst-italic">Confirm Booking</button>
-                                                        </Link>
+
                                                     </Card.Footer>
                                                 </Card>
                                             </Col>
@@ -112,6 +110,8 @@ const Booking = () => {
                                     </div>
                                 </Row>
                             </div>
+
+                            {/* Booking Form  */}
                             <div className="col-md-7">
                                 <div className=" order-services  m-auto">
                                     <div className=" border border d-flex justify-content-center align-items-center">
@@ -160,6 +160,13 @@ const Booking = () => {
                                                     {...register("phoneNo", { required: true })}
                                                     placeholder="Phone No"
                                                     className="p-1  mt-2"
+                                                />
+                                                <input
+                                                    type="hidden"
+                                                    {...register("status", { required: true })}
+                                                    defaultValue="Pending"
+
+
                                                 />
 
                                                 {errors.exampleRequired && <span>This field is required</span>}

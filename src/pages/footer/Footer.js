@@ -132,19 +132,16 @@ const Footer = () => {
                                             Home
                                         </Link>
                                     </li>
-                                    <li className="footer-menu">
-                                        <Link to="/services" className="footer-menu text-decoration-none">
-                                            Services
-                                        </Link>
-                                    </li>
-                                    <li className="footer-menu">
-                                        <Link to="/doctors" className="footer-menu text-decoration-none">
-                                            Doctor's
-                                        </Link>
-                                    </li>
+                                    
+                                    
                                     <li className="footer-menu">
                                         <Link to="/about" className="footer-menu text-decoration-none">
                                             About us
+                                        </Link>
+                                    </li>
+                                    <li className="footer-menu">
+                                        <Link to="/contact" className="footer-menu text-decoration-none">
+                                            Contact us
                                         </Link>
                                     </li>
                                     <li className="footer-menu">
@@ -169,23 +166,23 @@ const Footer = () => {
 
                                     </h4>
                                     <li className="footer-menu">
-                                        <Link to="/home" className="footer-menu text-decoration-none">
-                                            ICU Patient Care
-                                        </Link>
-                                    </li>
-                                    <li className="footer-menu">
-                                        <Link to="/services" className="footer-menu text-decoration-none">
-                                            Neuro Patient Care
-                                        </Link>
-                                    </li>
-                                    <li className="footer-menu">
-                                        <Link to="/about" className="footer-menu text-decoration-none">
-                                            Doctor Service
+                                        <Link to="/contact" className="footer-menu text-decoration-none">
+                                            24/7 Support
                                         </Link>
                                     </li>
                                     <li className="footer-menu">
                                         <Link to="/contact" className="footer-menu text-decoration-none">
-                                            Maternity Care
+                                           Experienced Guides
+                                        </Link>
+                                    </li>
+                                    <li className="footer-menu">
+                                        <Link to="/contact" className="footer-menu text-decoration-none">
+                                           Personal Guides
+                                        </Link>
+                                    </li>
+                                    <li className="footer-menu">
+                                        <Link to="/contact" className="footer-menu text-decoration-none">
+                                            Secure TourPlan
                                         </Link>
                                     </li>
 

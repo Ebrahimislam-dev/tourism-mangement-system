@@ -7,7 +7,7 @@ const Contactus = () => {
             <div className="container">
                 <div className="row container">
                     <h1 className="heading mb-5 mt-2">
-                        CONTACT  <span className="text-danger ms-3">US</span> 
+                        CONTACT  <span className="text-danger ms-3">US</span>
                     </h1>
 
                     <div className="col-md-5 text-start ms-3">

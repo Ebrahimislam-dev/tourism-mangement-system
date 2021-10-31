@@ -24,6 +24,8 @@ const Myorder = () => {
 
             })
     }, [setMyOrders, setIsLoading, user.email]);
+
+    // Delete Api
     const handleDelete = id => {
         const url = `https://frozen-refuge-45390.herokuapp.com/allorder/${id}`;
         fetch(url, {
@@ -31,11 +33,13 @@ const Myorder = () => {
         })
             .then(res => res.json())
             .then(data => {
+                setIsLoading(true);
                 if (data.deletedCount) {
-                    alert('deleted')
+                    alert('This item is Canceled')
                     const remaining = orders.filter(order => order._id !== id);
                     setOrders(remaining);
                     console.log(error);
+                    setIsLoading(false);
 
                 }
 
@@ -64,6 +68,8 @@ const Myorder = () => {
                                         <th>Email</th>
 
                                         <th>Order Date</th>
+                                        <th>Order Status</th>
+
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -77,8 +83,9 @@ const Myorder = () => {
                                             <td>{order?.email}</td>
 
                                             <td>{order?.date}</td>
+                                            <td>{order?.status}</td>
                                             <button className="btn-outline-danger mt-1 mb-3 fw-bold px-3" onClick={() => handleDelete(order._id)} >Cancel</button>
-                                            <button className="btn-outline-success p-2 mb-1 fw-bold">Pending</button>
+                                            <button className="btn-outline-success p-2 mb-1 fw-bold">Approved</button>
 
                                         </tr>
                                     </tbody>

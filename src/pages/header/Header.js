@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import "./Header.css"
-// import useAuth from "./../../../hooks/useAuth";
+
 import { Link } from "react-router-dom";
 
 
@@ -40,16 +40,22 @@ const Header = () => {
                         <NavLink to='/home' activeStyle={active} className='nav-item text-black   text-decoration-none'>
                             Home
                         </NavLink>
-                        <NavLink to='/admin' activeStyle={active} className='nav-item text-black   text-decoration-none'>
-                            Admin
-                        </NavLink>
+                        {/* Conditinal Nav Link */}
+                        {
+                            user.email && <NavLink to='/admin' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                                Admin
+                            </NavLink>}
 
-                        {/* <NavLink to='/addservice' activeStyle={active} className='nav-item text-black   text-decoration-none'>
-                                    Add_Service
-                                </NavLink> */}
-                        <NavLink to='/myorders' activeStyle={active} className='nav-item text-black   text-decoration-none'>
-                            My_Orders
-                        </NavLink>
+                        {
+                            user.email && <NavLink to='/myorders' activeStyle={active} className='nav-item text-black   text-decoration-none'>
+                                My_Orders
+                            </NavLink>
+                        }
+
+
+
+
+
                         <NavLink to='/about' activeStyle={active} className='nav-item text-black   text-decoration-none'>
                             About_Us
                         </NavLink>

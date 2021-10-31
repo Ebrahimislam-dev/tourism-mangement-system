@@ -18,7 +18,7 @@ const Login = () => {
         handlePasswordChange,
         toggleLogin,
         isLogin,
-        processLogin} = useAuth()
+        processLogin } = useAuth()
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
@@ -37,7 +37,7 @@ const Login = () => {
             .then(result => {
                 history.push(redirect_uri)
             });
-        
+
     }
 
     return (
@@ -52,6 +52,9 @@ const Login = () => {
                             <h1 className="heading fw-bolder fst-italic mt-5 mb-5">{isLogin ? 'Please' : 'Create a'}   <span style={{ color: 'lightblue' }}>  {isLogin ? 'Login' : 'new account here'} </span>   </h1>
 
                             <div>
+
+
+
                                 {/* Registration with email and password */}
                                 <Form onSubmit={handleRegistration}>
 
@@ -85,6 +88,9 @@ const Login = () => {
                                         </Col>
                                     </Form.Group>
                                     <div className="row ms-5 mb-3 text-danger">{error}</div>
+
+
+
                                     {/* google login */}
                                     <Form.Group as={Row} >
                                         <Col className="mb-3 d-md-flex align-items-center" sm={{ span: 10, offset: 2 }}>

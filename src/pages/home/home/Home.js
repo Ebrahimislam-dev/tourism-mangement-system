@@ -24,15 +24,9 @@ const Home = () => {
                 </div>
             </div>
             <div>
-
             </div>
-
-
             <Services></Services>
            <Extrasections></Extrasections>
-
-
-            {/* <QuickLinks></QuickLinks> */}
 
         </div>
     );
