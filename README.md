@@ -5,7 +5,7 @@ Live Link: [Travel Mama](https://travelmama-6b4e5.web.app/).
 
 ## About My Project
 
-Basically this project is based on traveling . in this site you can find some tourist place , also you can see the details, and book a service for future travel. this project is created bt Reactjs, Mongodb-Atlas, nodejs-express, etc........    
+Basically this project is based on traveling & tourism management . in this site you can find some tourist place , also you can see the details, and book a service for future travel. this project is created bt Reactjs, Mongodb-Atlas, nodejs-express, etc........    
 
 
 ### Project Features For Users
